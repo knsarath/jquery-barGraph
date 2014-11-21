@@ -1,0 +1,32 @@
+ <<!DOCTYPE html>
+ <!-- always run from server -->
+ <html>
+ <head>
+ 	<title></title><link rel="stylesheet" type="text/css" href="styles.css">
+   <script type='text/javascript' src='//code.jquery.com/jquery-2.1.0.js'></script>
+  <script type='text/javascript' src="https://jqbargraph.googlecode.com/files/jqBarGraph.1.1.js"></script>
+
+ </head>
+ <body>
+
+
+ <div id="chart"></div> 
+
+ 
+ <script type="text/javascript">
+
+      arrayOfData = new Array(
+[[14,54,26],'2007'],
+[[8,48,38],'2008'],
+[[4,36,57],'2009']
+);	
+
+
+$('#chart').jqBarGraph({ data: arrayOfData ,
+                       colors: ['#242424','#437346','#97D95C'] 
+                       });
+ </script>
+ </body>
+ </html>
+  
+  
